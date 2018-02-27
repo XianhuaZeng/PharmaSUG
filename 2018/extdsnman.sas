@@ -83,12 +83,12 @@ data &type.S;
     retain &type.S;
     if first.FNAME then &type.S=cats(&type);
     else &type.S=catx(", ", &type.S, &type);
-    if last.FNAME;
     retain RE1 RE2;
     if _N_=1 then do;
         RE1=prxparse('s/(\b.+?\b)(,\s.*?)(\b\1+\b)/\2\3/i');
         RE2=prxparse('/(\b.+?\b)(,\s.*?)(\b\1+\b)/i');
     end;
+    if last.FNAME;
     /*Remove repeated values*/
     do i=1 to 100;
         &type.S=prxchange(RE1, -1, cats(&type.S));
