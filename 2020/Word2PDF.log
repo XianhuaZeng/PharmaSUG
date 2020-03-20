@@ -24,11 +24,9 @@ New features and enhancements include:
 Word2PDF 0.2 (2020-02-28)
 New features and enhancements include:
 1. Changed the button name from 'Convert' to 'Convert2PDF'.
-2. Made bookmark files optional for the first two functionalities. 
-   If no bookmark files, file will be converted/combined in alphabetical order and bookmark will be filename.
-3. For the Convert2RTF functionality, tool will show an error message in the popup window if no bookmark files.
-4. Updated to show convert/combine process status dynamically. 
-5. Added some additional status information in Status textbox.
+2. Made bookmark files optional for function Covert2PDF and Combine2PDF.
+3. Updated to show convert/combine process status dynamically. 
+4. Added some additional status information in Status textbox.
 -------------------------------------------------------------------------------
 Word2PDF 0.1 (2020-02-25)
 Initial version.
