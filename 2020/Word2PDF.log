@@ -21,7 +21,7 @@ New features and enhancements include:
 4. Added additional status information and formatted execution time to make it more readable. 
 5. Fixed duplicated lines issue in TOC. 
 -------------------------------------------------------------------------------
-Word2PDF 0.2 (2020-03-28)
+Word2PDF 0.2 (2020-02-28)
 New features and enhancements include:
 1. Changed the button name from 'Convert' to 'Convert2PDF'.
 2. Made bookmark files optional for the first two functionalities. 
