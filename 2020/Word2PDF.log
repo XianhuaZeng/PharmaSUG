@@ -6,7 +6,8 @@ New version 0.5 was released, please upgrade.
 Word2PDF 0.5 (2020-03-19)
 New features and enhancements include:
 1. Changed the GUI to allow all the functionalities to execute in one step.
-2. Added checkbox 'RTF' for 'Combine2RTF' to make Combined.rtf optional.
+2. Added checkbox 'Combined RTF' to make Combined.rtf optional.
+3. Added checkbox 'Combined PDF' to make Combined.pdf optional.
 -------------------------------------------------------------------------------
 Word2PDF 0.4 (2020-03-11)
 New features and enhancements include:
