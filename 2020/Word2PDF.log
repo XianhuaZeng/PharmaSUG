@@ -1,18 +1,18 @@
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Check for Updates
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 New version 0.5 was released, please upgrade.
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Word2PDF 0.5 (2020-03-19)
 New features and enhancements include:
 1. Changed the GUI to allow all the functionalities to execute in one step.
 2. Added checkbox 'RTF' for 'Combine2RTF' to make Combined.rtf optional.
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Word2PDF 0.4 (2020-03-11)
 New features and enhancements include:
 1. Added checkbox 'Cover Page' for 'Combine2RTF' to insert cove page.
 2. Added a feature to align long title in TOC. 
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Word2PDF 0.3 (2020-03-06)
 New features and enhancements include:
 1. Added button 'CheckPGN' to check pagination issue. 
@@ -20,7 +20,7 @@ New features and enhancements include:
 3. Added checkbox 'PGN' to keep original page number of individual RTF file in the combined file. 
 4. Added additional status information and formatted execution time to make it more readable. 
 5. Fixed duplicated lines issue in TOC. 
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Word2PDF 0.2 (2020-03-28)
 New features and enhancements include:
 1. Changed the button name from 'Convert' to 'Convert2PDF'.
@@ -29,6 +29,6 @@ New features and enhancements include:
 3. For the Convert2RTF functionality, tool will show an error message in the popup window if no bookmark files.
 4. Updated to show convert/combine process status dynamically. 
 5. Added some additional status information in Status textbox.
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 Word2PDF 0.1 (2020-02-25)
 Initial version.
