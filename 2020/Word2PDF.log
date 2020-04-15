@@ -1,7 +1,12 @@
 -------------------------------------------------------------------------------
 Check for Updates
 -------------------------------------------------------------------------------
-New version 0.5 was released.
+New version 1.0 was released.
+-------------------------------------------------------------------------------
+Word2PDF 1.0 (2020-04-16)
+New features and enhancements include:
+1. Re-wrote the pagination check VB script in Python.
+2. Updated to support huge file.
 -------------------------------------------------------------------------------
 Word2PDF 0.5 (2020-03-19)
 New features and enhancements include:
