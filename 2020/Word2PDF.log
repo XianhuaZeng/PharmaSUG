@@ -5,10 +5,12 @@ New version 1.1 was released.
 -------------------------------------------------------------------------------
 Word2PDF 1.1 (2020-07-23)
 New features and enhancements include:
+
 1. Added a checkbox 'Remove Title in Bookmark' to make title in bookmark optional.
 2. Updated to support page X of Y format '{{Page} {\field{\*\fldinst{ PAGE }}}\${ of}\~{\field{\*\fldinst {NUMPAGES }}}'
 3. Threw a note when selected files are not listed in bookmark file.
 4. Threw a note when selected files miss closing section '{'.
+5. Added download link for new release.
 -------------------------------------------------------------------------------
 Word2PDF 1.0 (2020-04-16)
 New features and enhancements include:
