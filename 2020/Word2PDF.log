@@ -7,33 +7,33 @@ Word2PDF 1.1 (2020-07-23)
 New features and enhancements include:
 
 1. Added a checkbox 'Remove Title in Bookmark' to make title in bookmark optional.
-
 2. Updated to support page X of Y format '{{Page} {\field{\*\fldinst{ PAGE }}}\${ of}\~{\field{\*\fldinst {NUMPAGES }}}'.
-
 3. Threw a note when selected files are not listed in bookmark file.
-
 4. Threw a note when selected files miss closing section '{'.
-
 5. Added download link for new release.
 -------------------------------------------------------------------------------
 Word2PDF 1.0 (2020-04-16)
 New features and enhancements include:
+
 1. Re-wrote the pagination check VB script in Python.
 2. Updated to support huge file.
 -------------------------------------------------------------------------------
 Word2PDF 0.5 (2020-03-19)
 New features and enhancements include:
+
 1. Changed the GUI to allow all the functionalities to execute in one step.
 2. Added checkbox 'Combined RTF' to make Combined.rtf optional.
 3. Added checkbox 'Combined PDF' to make Combined.pdf optional.
 -------------------------------------------------------------------------------
 Word2PDF 0.4 (2020-03-11)
 New features and enhancements include:
+
 1. Added checkbox 'Cover Page' for 'Combine2RTF' to insert cove page.
 2. Added a feature to align long title in TOC. 
 -------------------------------------------------------------------------------
 Word2PDF 0.3 (2020-03-06)
 New features and enhancements include:
+
 1. Added button 'CheckPGN' to check pagination issue. 
 2. Added checkbox 'RTF' for 'Combine2RTF' to make Combined.rtf optional.
 3. Added checkbox 'PGN' to keep original page number of individual RTF file in the combined file. 
@@ -42,6 +42,7 @@ New features and enhancements include:
 -------------------------------------------------------------------------------
 Word2PDF 0.2 (2020-02-28)
 New features and enhancements include:
+
 1. Changed the button name from 'Convert' to 'Convert2PDF'.
 2. Made bookmark files optional for function Covert2PDF and Combine2PDF.
 3. Updated to show convert/combine process status dynamically. 
