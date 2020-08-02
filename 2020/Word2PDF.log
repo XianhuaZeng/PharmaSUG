@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Check for Updates
 -------------------------------------------------------------------------------
-New version 1.0 was released.
+New version 1.1 was released.
 -------------------------------------------------------------------------------
 Word2PDF 1.1 (2020-07-23)
 New features and enhancements include:
@@ -10,6 +10,7 @@ New features and enhancements include:
 3. Threw a note when selected files are not listed in bookmark file.
 4. Threw a note when selected files miss closing section '{'.
 5. Added download link for new release.
+6. Removed code '\pgnrestart' from RTF file which leads pagenumber is always 1 in TOC.
 -------------------------------------------------------------------------------
 Word2PDF 1.0 (2020-04-16)
 New features and enhancements include:
