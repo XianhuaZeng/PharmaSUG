@@ -10,7 +10,7 @@ New features and enhancements include:
 3. Threw a note when selected files are not listed in bookmark file.
 4. Threw a note when selected files miss closing section '{'.
 5. Added download link for the next release.
-6. Removed code '\pgnrestart' from RTF file if it exists, which leads pagenumber is always 1 in TOC.
+6. Removed code '\pgnrestart' from RTF file if it exists, which leads page number is always 1 in TOC.
 7. Fixed an issue where there are special characters in title.
 -------------------------------------------------------------------------------
 Word2PDF 1.0 (2020-04-16)
