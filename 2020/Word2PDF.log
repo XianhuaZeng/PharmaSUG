@@ -1,7 +1,13 @@
 -------------------------------------------------------------------------------
 Check for Updates
 -------------------------------------------------------------------------------
-New version 1.3 was released.
+New version 1.4 was released.
+-------------------------------------------------------------------------------
+Word2PDF 1.4 (2021-01-11)
+New features and enhancements include:
+1. Added estimated execution time for each step.
+2. Updated to support page X of Y format '{{Page} {\field{\*\fldinst{ PAGE }}}\~{of}\~{\field{\*\fldinst { NUMPAGES }}}'.
+3. Removed fake pagination issue where logical page is greater than physical page.
 -------------------------------------------------------------------------------
 Word2PDF 1.3 (2020-09-30). Upgrading is strongly recommended.
 New features and enhancements include:
