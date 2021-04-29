@@ -1,7 +1,12 @@
 -------------------------------------------------------------------------------
 Check for Updates
 -------------------------------------------------------------------------------
-New version 1.4 was released.
+New version 1.5 was released.
+-------------------------------------------------------------------------------
+Word2PDF 1.5 (2021-04-29)
+New features and enhancements include:
+1. Updated to support Chinese characters in content and TOC.
+2. Fixed an issue where there are extra spaces in TOC.
 -------------------------------------------------------------------------------
 Word2PDF 1.4 (2021-01-11)
 New features and enhancements include:
