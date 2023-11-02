@@ -196,7 +196,7 @@
 
 %mend GetLeadValue;
 
-/* Usage */
+/* Usage *
 %GetLeadValue(dataIn = sashelp.class
            , dataOut = demo
            , varIn   = NAME @ AGE
