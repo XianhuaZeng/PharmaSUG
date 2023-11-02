@@ -95,10 +95,10 @@
 
     %let byVar = %sysfunc(compbl(%sysfunc(strip(&byVar))));
 
-    %let ggvl_byVar = %sysfunc(prxchange(s/\b(descending)\b//i, -1, %quote(&byVar)));
+    %let gvl_byVar = %sysfunc(prxchange(s/\b(descending)\b//i, -1, %quote(&byVar)));
 
-    %do i=1 %to %sysfunc(countw(&ggvl_byVar));
-        %let glv_byVar_ind = %scan(&ggvl_byVar, &i, %str( ));
+    %do i=1 %to %sysfunc(countw(&gvl_byVar));
+        %let glv_byVar_ind = %scan(&gvl_byVar, &i, %str( ));
 
         %if not %sysfunc(prxmatch(/&glv_byVar_ind/i, %quote(&var_list))) %then %do;
             %let glv_returnmsg = %str(Parameter byVar &glv_byVar_ind. does not exist in dataset &dataIn, please check.);
@@ -127,22 +127,22 @@
     %end;
 %end;
 
-%if "%superQ(varOut)" = "" and not %sysfunc(prxmatch(/\@/, %quote(&varIn))) %then %let varOut=GGLV_&varIn;
-%else %if "%superQ(varOut)" = "" and %sysfunc(prxmatch(/\@/, %quote(&varIn))) %then %let varOut=GGLV_%sysfunc(prxchange(s/\@/\@GGLV_/, -1, %quote(&varIn)));;
+%if "%superQ(varOut)" = "" and not %sysfunc(prxmatch(/\@/, %quote(&varIn))) %then %let varOut=GLV_&varIn;
+%else %if "%superQ(varOut)" = "" and %sysfunc(prxmatch(/\@/, %quote(&varIn))) %then %let varOut=GLV_%sysfunc(prxchange(s/\@/\@GLV_/, -1, %quote(&varIn)));;
 
 /* Drive variable */
 %if "%superQ(byVar)" ^= "" %then %do;
-  proc sort data = &dataIn out = glv_temp;
-      by &byvar;
-  run;
+    proc sort data = &dataIn out = glv_temp;
+        by &byvar;
+    run;
 %end;
 
 %do i = 1 %to %sysfunc(countw(&varIn, @));
   data &dataOut;
       if _N_ = 1 then do;
           dcl hash h(ordered: "a") ;
-          h.definekey("GGLV_SEQ");
-          h.definedata("GGLV_SEQ", "%scan(&varOut, &i, @)");
+          h.definekey("GLV_SEQ");
+          h.definedata("GLV_SEQ", "%scan(&varOut, &i, @)");
           h.definedone();
           dcl hiter hi('h');
           do until(eof);
@@ -154,7 +154,7 @@
               %else &dataOut;
               end = eof;
               %scan(&varOut, &i, @) = %scan(&varIn, &i, @);
-              GGLV_SEQ + 1;
+              GLV_SEQ + 1;
               h.add();
           end;
       end;
@@ -165,9 +165,9 @@
       %end;
       %else &dataOut;;
       hi.setcur(key: _N_);
-      GGLV_RC = hi.next();
-      if GGLV_RC ^= 0 then call missing(%scan(&varOut, &i, @));
-      drop GGLV_SEQ GGLV_RC;
+      GLV_RC = hi.next();
+      if GLV_RC ^= 0 then call missing(%scan(&varOut, &i, @));
+      drop GLV_SEQ GLV_RC;
   run;
 %end;
 
@@ -180,6 +180,12 @@
             if last.&glv_byVar_ind then call missing(%scan(&varOut, &i, @));
         %end;
     run;
+
+    /* Remove temp dataset */
+    proc datasets library = work nolist;
+        delete glv_temp;
+    quit;
+
 %end;
 
 %goto macEnd;
