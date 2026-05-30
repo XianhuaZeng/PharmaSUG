@@ -64,6 +64,8 @@ python DefinePageChecker.py
    - 🟠 Orange — pages with no annotations
    - Black — progress and completion messages
 
+![Execution Status](docs/execution_status.png)
+
 ---
 
 ### CLI mode
@@ -145,7 +147,8 @@ DefinePageChecker/
 ├── README.md
 ├── LICENSE
 └── docs/
-    └── screenshot.png
+    ├── screenshot.png
+    └── execution_status.png
 ```
 
 ---
